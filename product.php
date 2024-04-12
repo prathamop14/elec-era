@@ -7,7 +7,10 @@
     <?php
     include('nav.php')
     ?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
+
 
 <body>
                 <div class="menu-button w-nav-button"><img
@@ -19,53 +22,47 @@
     <div class="section">
         <div class="container cc-heading-wrap">
             <h1>Our Products</h1>
-            <div class="store-categories-wrap"><a href="/products" aria-current="page"
+            <div class="store-categories-wrap"><a href="product.php" aria-current="page"
                     class="products-category-link w--current">All Products</a>
-                <div class="w-dyn-list">
-                    <div role="list" class="collection-list w-dyn-items">
-                        <div role="listitem" class="w-dyn-item"><a href="/category/category-1"
-                                class="products-category-link">Category 1</a></div>
-                        <div role="listitem" class="w-dyn-item"><a href="/category/category-2"
-                                class="products-category-link">Category 2</a></div>
-                        <div role="listitem" class="w-dyn-item"><a href="/category/category-3"
-                                class="products-category-link">Category 3</a></div>
-                        <div role="listitem" class="w-dyn-item"><a href="/category/category-4"
-                                class="products-category-link">Category 4</a></div>
-                    </div>
+              
                 </div>
             </div>
         </div>
     </div>
     <div class="section">
-        <div class="w-dyn-list">
-            <div role="list" class="collection-wrap w-dyn-items">
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "elec-era";
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    $sql = "SELECT name, image FROM categories";
-    $result = $conn->query($sql);
+    <div class="w-dyn-list">
+        <div role="list" class="collection-wrap w-dyn-items">
+            <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "elec-era";
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            if ($conn->connect_error) {
+                die("Connection failed: ". $conn->connect_error);
+            }
+            $sql = "SELECT name, image FROM categories";
+            $result = $conn->query($sql);
 
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-    echo '                <div role="listitem" class="collection-item w-dyn-item">
-                <a href="repair.php?product='.$row['name'].'"><img src="'.$row['image'].'">
-                        <div class="product-description">
-                            <div class="product-name-text">'.$row['name'].'</div>
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '
+                    <div role="listitem" class="collection-item w-dyn-item d-flex justify-content-start">
+                        <div class="card" style="width: 15rem;">
+                            <img src="'. $row['image']. '" class="card-img-top" alt="'. $row['name']. '" style="height: 250px; width: 230px;">
+                            <div class="card-body">
+                                <h5 class="card-title">'. $row['name']. '</h5>
+                                <a href="repair.php?product='. $row['name']. '" class="btn btn-primary">View Product</a>
+                            </div>
                         </div>
-                    </a>
-                </div>';
-        }
-    }
-    ?>
-    </div>
+                    </div>';
+                }
+            }
+           ?>
         </div>
     </div>
+</div>
+
     <div class="section cc-subscribe-form">
         <div class="container cc-subscription-form">
             <div class="heading-jumbo-small">Monthly Newsletter</div>
@@ -99,6 +96,8 @@
         crossorigin="anonymous"></script>
     <script src="/era.js"
         type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

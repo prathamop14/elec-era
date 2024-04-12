@@ -4,7 +4,7 @@
     data-wf-site="660a380edcbe8e8216677e08" lang="en">
 <head>
 <?php
-    include('nav.php')
+    include('nav.php');
     ?>
 </head>
 <body>
@@ -59,13 +59,8 @@
             </div>
         </div>
     </div>
-   
 </body>
-<head>
   <?php
-    include('footer.php')
-    ?>
-    </head> 
-  
-
+  include("footer.php");
+  ?> 
 </html>

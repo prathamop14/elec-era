@@ -4,10 +4,10 @@
     data-wf-site="660a380edcbe8e8216677e08" lang="en">
 <head>
     <?php
-    include('nav.php')
+    include('nav.php');
     ?>
 </head>
-
+<body>
 <table class='product-table'>
       <thead>
         <tr>
@@ -16,7 +16,6 @@
           <th>Damage Type</th>
         </tr>
     </thead>
-<body>
     <style>
  
 .product-table {
@@ -72,12 +71,11 @@
         }
     }
     ?>
-     <?php
-    include('footer.php')
-    ?>
+    </table>
+    <?php
+include('footer.php');
+?>
 </body>
-
-  
 </html>
 
    
