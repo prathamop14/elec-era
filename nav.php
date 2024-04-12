@@ -15,9 +15,7 @@
 <body>
     <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="navigation w-nav">
-        <div class="navigation-items"><a href="/" aria-current="page" class="logo-link w-nav-brand w--current"><img
-                    src="https://assets-global.website-files.com/5c6eefaaeddf9248ac13bc72/5c6ef116eddf92775813c297_store-logo%402x.png"
-                    width="65" alt="" class="logo-image" /></a>
+        <div class="navigation-items"><a href="home.php" aria-current="page" class="logo-link w-nav-brand w--current"><h4>Electronics Era</h4></a>
             <div class="navigation-wrap">
                 <nav role="navigation" class="navigation-items w-nav-menu">
                     <a href="home.php"
@@ -32,6 +30,7 @@ error_reporting(0);
 if (isset($_COOKIE['name'])) {
     echo '<p class="navigation-item w-nav-link">Welcome,<br>';
     echo $_COOKIE['name']."</p>";
+    echo '<a href="logout.php" class="navigation-item w-nav-link">Logout</a>';
 }else {
     echo '<a href="login.php" class="navigation-item w-nav-link">Login</a>';
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 12, 2024 at 08:10 AM
+-- Generation Time: Apr 12, 2024 at 09:56 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -55,20 +55,24 @@ DROP TABLE IF EXISTS `repair_req`;
 CREATE TABLE IF NOT EXISTS `repair_req` (
   `product` varchar(100) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `address` varchar(100) NOT NULL,
   `damage` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `userid` int NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `userid` int NOT NULL,
+  `reqid` int NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`reqid`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `repair_req`
 --
 
-INSERT INTO `repair_req` (`product`, `name`, `address`, `damage`, `userid`) VALUES
-('Laptop', 'Lap', 'Op', 'external', 1),
-('Fridge', 'Maru fridge', 'dfdg', 'internal', 1),
-('Laptop', 'dell', '100/1255 uday', 'internal', 9),
-('Laptop', 'ds', 'dsdsa', 'internal', 1);
+INSERT INTO `repair_req` (`product`, `name`, `email`, `address`, `damage`, `userid`, `reqid`) VALUES
+('Laptop', 'Lap', '', 'Op', 'external', 1, 1),
+('Fridge', 'Maru fridge', '', 'dfdg', 'internal', 1, 2),
+('Laptop', 'dell', '', '100/1255 uday', 'internal', 9, 3),
+('Laptop', 'ds', '', 'dsdsa', 'internal', 1, 4),
+('Fridge', 'ghvbj', '', 'jbjgbj', 'external', 1, 5);
 
 -- --------------------------------------------------------
 

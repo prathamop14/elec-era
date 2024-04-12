@@ -3825,12 +3825,12 @@ html {
   .intro-header {
     color: #fff;
     background-color: #f4f4f4;
-    background-image: url("bg1.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2020/04/12/20/37/abstract-5035778_1280.jpg");
     background-position: 50%;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    height: 620px;
+    height: 400px;
     margin-bottom: 100px;
     display: flex;
   }
@@ -3855,6 +3855,7 @@ html {
     margin-bottom: 35px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #0c0c0cd0;
   }
   
   .main-heading-wrap {

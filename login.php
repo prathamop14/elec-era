@@ -29,9 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result->num_rows == 1) {
             $row = $result->fetch_assoc();
             $_SESSION["userid"] = $row["id"];
-            $_SESSION["name"] = $row["name"];
+            $_SESSION["name"] = $row["email"];
+            $_SESSION["email"] = $row["name"];
             setcookie("userid", $row["id"], time() + 3600, "/");
             setcookie("name", $row["name"], time() + 3600, "/");
+            setcookie("email", $row["email"], time() + 3600, "/");
             header("Location: home.php");
             exit();
         } 

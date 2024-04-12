@@ -14,6 +14,7 @@
           <th>Product</th>
           <th>Model</th>
           <th>Damage Type</th>
+          <th>Cancel </th>
         </tr>
     </thead>
     <style>
@@ -67,6 +68,7 @@
     <td>'.$row['product'].'</td>
     <td>'.$row['name'].'</td>
     <td>'.$row['damage'].'</td>
+    <td><a href="remove.php?reqid='.$row['reqid'].'">Cancel Repair</a></td>
     </tr>';
         }
     }

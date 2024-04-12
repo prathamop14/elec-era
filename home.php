@@ -13,7 +13,7 @@
         <div class="intro-header">
             <div class="intro-content">
                 <div class="intro-text">
-                    <div class="heading-jumbo">Welcome to Reparing site<br /></div>
+                    <div class="heading-jumbo">Welcome to Electronic Era<br /></div>
                     <div class="paragraph-bigger cc-bigger-light">Let's the reparing item<br /></div>
                 </div><a href="product.php" class="button cc-white-button w-inline-block">
                     <div>Explore</div>

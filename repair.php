@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="section cc-subscribe-form">
+     
         <div class="container cc-subscription-form">
             <div class="heading-jumbo-small">Repair Form For <?php echo $_GET['product'];?></div>
             <div class="paragraph-light cc-subscribe-paragraph">Enter Your <?php echo $_GET['product']?> Details</div>
@@ -41,7 +42,7 @@
                     if(isset($_COOKIE['userid'])) {
                         if (isset($_POST['sbt'])) {
                             $userid = $_COOKIE['userid'];
-                            $query = 'INSERT INTO repair_req (product, name, address, damage, userid) VALUES ("'.$_GET['product'].'", "'.$_POST['pro-name'].'", "'.$_POST['address'].'","'.$_POST['damage'].'", ' .$_COOKIE['userid'].');';
+                            $query = 'INSERT INTO repair_req (product, name, email, address, damage, userid) VALUES ("'.$_GET['product'].'", "'.$_POST['pro-name'].'", "'.$_COOKIE['email'].'", "'.$_POST['address'].'","'.$_POST['damage'].'", ' .$_COOKIE['userid'].');';
                             $result = mysqli_query($conn, $query);
                             header('Location:home.php');
                         }
