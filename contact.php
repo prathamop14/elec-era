@@ -74,13 +74,13 @@
                     <div id="w-node-_016410b9-f46c-d5d0-c671-ed1d7aa23d9f-16677e64" class="number-contact-wrap">
                         <div class="paragraph-bigger">Email</div><a
                             href="mailto:support@store.com?subject=You&#x27;ve%20got%20mail"
-                            class="support-link">support@store.com</a>
+                            class="support-link">electronicera21@gmail.com</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section cc-subscribe-form">
+    <!-- <div class="section cc-subscribe-form">
         <div class="container cc-subscription-form">
             <div class="heading-jumbo-small">Monthly Newsletter</div>
             <div class="paragraph-light cc-subscribe-paragraph">Sign up to receive updates from our shop, including new
@@ -102,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <head>
     <?php
     include('footer.php')

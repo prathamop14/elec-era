@@ -41,7 +41,7 @@
             </div>
         </div> -->
         
-    <div class="section cc-subscribe-form">
+    <!-- <div class="section cc-subscribe-form">
         <div class="container cc-subscription-form">
             <div class="heading-jumbo-small">Monthly Newsletter</div>
             <div class="paragraph-light cc-subscribe-paragraph">Sign up to receive updates from our shop, including new
@@ -63,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <head>
     <?php
     include('footer.php')
