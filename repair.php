@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Mon Apr 01 2024 04:29:59 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="electronic-era-d58163.webflow.io" data-wf-page="660a380edcbe8e8216677e51"
     data-wf-site="660a380edcbe8e8216677e08" lang="en">
+<link rel="stylesheet" href="C.css">
+
 <head>
 <?php
     include('nav.php');

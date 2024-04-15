@@ -1,0 +1,14 @@
+body{
+    animation: Fade-in 1s ease 0s 1 forwards normal;
+}
+@keyframes Fade-in {
+    0%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+       
+}

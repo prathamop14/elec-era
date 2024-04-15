@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Mon Apr 01 2024 04:29:59 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="electronic-era-d58163.webflow.io" data-wf-page="660a380edcbe8e8216677e51"
     data-wf-site="660a380edcbe8e8216677e08" lang="en">
+    
 <head>
     <?php
     include('nav.php');
@@ -62,13 +62,14 @@
 
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+         
     echo '    
     <tbody>
     <tr>
     <td>'.$row['product'].'</td>
     <td>'.$row['name'].'</td>
     <td>'.$row['damage'].'</td>
-    <td><a href="remove.php?reqid='.$row['reqid'].'">Cancel Repair</a></td>
+    <td><a id="cbtn" style="background:#ff9090a6; color:red; margin-inline-end: auto; margin-inline-start: auto; border-radius:0.5rem; padding-right: 1rem ; margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1rem ; width: fit-content !important;" href="remove.php?reqid='.$row['reqid'].'">Cancel Repair</a></td>
     </tr>';
         }
     }
@@ -77,6 +78,14 @@
     <?php
 include('footer.php');
 ?>
+<script>
+  console.log(document.getElementById('cbtn'));
+  document.getElementById('cbtn').addEventListener("click", ()=>
+{
+  alert("Requests Canceled");
+})
+
+  </script>
 </body>
 </html>
 

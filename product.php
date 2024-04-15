@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Mon Apr 01 2024 04:29:59 GMT+0000 (Coordinated Universal Time) -->
 <html data-wf-domain="electronic-era-d58163.webflow.io" data-wf-page="660a380edcbe8e8216677e6b"
     data-wf-site="660a380edcbe8e8216677e08" lang="en">
+    <link rel="stylesheet" href="C.css">
 
 <head>
     <?php
@@ -63,29 +63,7 @@
     </div>
 </div>
 
-    <!-- <div class="section cc-subscribe-form">
-        <div class="container cc-subscription-form">
-            <div class="heading-jumbo-small">Monthly Newsletter</div>
-            <div class="paragraph-light cc-subscribe-paragraph">Sign up to receive updates from our shop, including new
-                tea selections and upcoming events.</div>
-            <div class="form-block w-form">
-                <form id="wf-form-Monthly-Newsletter-Form" name="wf-form-Monthly-Newsletter-Form"
-                    data-name="Monthly Newsletter Form" method="get" class="subscribe-form"
-                    data-wf-page-id="660a380edcbe8e8216677e6b"
-                    data-wf-element-id="2df3695a-ff87-37fa-7ac7-63d4f4891940"><input
-                        class="text-field cc-subscribe-text-field w-input" maxlength="256" name="Newsletter-Email"
-                        data-name="Newsletter Email" placeholder="Enter your email" type="email" id="Newsletter-Email"
-                        required="" /><input type="submit" data-wait="Please wait..." class="button w-button"
-                        value="Submit" /></form>
-                <div class="status-message w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="status-message w-form-fail">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+   
     <head>
     <?php
     include('footer.php')
